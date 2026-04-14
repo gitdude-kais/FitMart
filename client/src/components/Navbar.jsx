@@ -171,7 +171,7 @@ export default function Navbar({
                           </p>
                         </div>
 
-                        {/* If user is currently on the profile page, show only Shop + Sign Out */}
+                        {/* If user is currently on the profile page, show limited options */}
                         {isProfileRoute ? (
                           <div className="border-t border-stone-100 mt-1">
                             <button
@@ -208,6 +208,19 @@ export default function Navbar({
                                 Go to Shop →
                               </button>
                             )}
+
+                            {/* Fitness tracker link - from daily-workout-tracker branch */}
+                            <button
+                              onClick={() => {
+                                navigate("/tracker");
+                                setMenuOpen?.(false);
+                              }}
+                              className="w-full text-left text-xs text-stone-700 font-medium
+                                         hover:bg-stone-50 px-4 py-2.5 transition-colors
+                                         min-h-[36px]"
+                            >
+                              Track Fitness →
+                            </button>
 
                             <div className="border-t border-stone-100 mt-1">
                               <button

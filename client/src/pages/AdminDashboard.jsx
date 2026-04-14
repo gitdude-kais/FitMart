@@ -174,7 +174,7 @@ export default function AdminDashboard() {
             Command Centre
           </h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
             {[
               {
                 href: "/admin/inventory", title: "Inventory",
